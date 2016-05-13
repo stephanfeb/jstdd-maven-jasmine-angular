@@ -5,6 +5,6 @@ The reason I wrote this guide is because I wanted to bootstrap a Maven+Javascrip
 
 ### Notable
   * Jasmine uses a .html file as a `TestRunner`
-  * The Maven Jasmine plugin comes with it's own default .html template. Override the `customRunnerTemplate` configuration setting in your `pom.xml` to import JavaScript dependencies you need. 
+  * The Maven Jasmine plugin comes with it's own default .html template. Override the `customRunnerTemplate` configuration setting in your `pom.xml` to define a custom Template which will allow you to import your project-specific JavaScript dependencies. 
   * The reference for which variables are accessible from the .html template can be found here : [Spec Runner Template Reference](http://searls.github.io/jasmine-maven-plugin/spec-runner-templates.html)
   * The Maven-Jasmine-Plugin comes with a handy [Reference for Jasmine Config Variables](https://searls.github.io/jasmine-maven-plugin/test-mojo.html)
