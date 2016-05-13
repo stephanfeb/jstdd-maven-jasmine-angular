@@ -3,6 +3,15 @@
 A simple Maven project which demonstrates integration between the Maven-Jasmine-Plugin and a basic Angular project for Test Driven Development.
 The reason I wrote this guide is because I wanted to bootstrap a Maven+Javascript TDD workflow which had minimal external dependencies, specifically no NodeJS dependency. 
 
+### How to run
+
+After cloning this repo, in the top-level folder of this project: 
+
+```bash
+$ mvn jasmine:test
+```
+...and watch the pretty lights. 
+
 ### Notable
   * Jasmine uses a .html file as a `TestRunner`
   * The Maven Jasmine plugin comes with it's own default .html template. Override the `customRunnerTemplate` configuration setting in your `pom.xml` to define a custom Template which will allow you to import your project-specific JavaScript dependencies. 
