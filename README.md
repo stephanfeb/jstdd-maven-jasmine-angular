@@ -21,5 +21,5 @@ $ mvn jasmine:test
 ### References
 
   * Thanks to [@fellippenardi](https://github.com/felippenardi) for his boilerplate on [AngularJS + Jasmine](https://github.com/felippenardi/angularjs-and-jasmine-test-boilerplate)
-  * (The Jasmine Maven Plugin)[http://searls.github.io/jasmine-maven-plugin/index.html]
-  * (Angular JS)[https://angularjs.org/]
+  * [The Jasmine Maven Plugin](http://searls.github.io/jasmine-maven-plugin/index.html])
+  * [Angular JS](https://angularjs.org/])
