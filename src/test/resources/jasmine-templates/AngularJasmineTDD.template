@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=$sourceEncoding$">
+    $if(autoRefresh)$
+    <meta http-equiv="refresh" content="$autoRefreshInterval$">
+    $endif$
+    <title>Jasmine Spec Runner</title>
+
+
+
+    <script type="text/javascript">
+        window.onerror = function (msg, url, line) {
+            if (document.head) {
+                var jserror = document.head.getAttribute('jmp_jserror') || '';
+                if (jserror) {
+                    jserror += ':!:';
+                }
+                jserror += msg;
+                document.head.setAttribute('jmp_jserror', jserror);
+            }
+        };
+    </script>
+
+
+    $cssDependencies$
+    $javascriptDependencies$
+
+    <script type="text/javascript">
+        window.onload = jasmine.boot;
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.4.1/jasmine.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-mocks.js"></script>
+
+    $allScriptTags$
+</head>
+<body>
+
+<script type="text/javascript">
+    if (window.location.href.indexOf("ManualSpecRunner.html") !== -1) {
+        document.body.appendChild(document.createTextNode("Warning: Opening this HTML file directly from the file system is deprecated. You should instead try running `mvn jasmine:bdd` from the command line, and then visit `http://localhost:8234` in your browser. "))
+    }
+</script>
+</body>
+</html>
